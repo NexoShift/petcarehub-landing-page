@@ -19,10 +19,10 @@ landing/
 ├── i18n/
 │   ├── es.json             # Textos en español
 │   └── en.json             # Textos en inglés
-├── assets/img/
-│   ├── brand/              # isotipo.svg y logo-petcarehub.png
-│   └── team/               # Fotos de los 5 integrantes
-└── referencias/            # Wireframe y mockup del informe TP1 (no se publican)
+└──  assets/img/
+    ├── brand/              # isotipo.svg y logo-petcarehub.png
+    └── team/               # Fotos de los 5 integrantes
+
 ```
 
 ## Secciones
@@ -50,22 +50,3 @@ Cada texto traducible lleva `data-i18n="seccion.clave"` (o `data-i18n-html` / `d
 2. Agregar la misma clave en `i18n/es.json` y `i18n/en.json`.
 
 El idioma elegido se guarda en el navegador. El HTML ya trae el español, así que la página se ve completa aunque no carguen los JSON.
-
-## Ver en local
-
-Los JSON se cargan con `fetch`, que no funciona abriendo el archivo con doble clic (`file://`). Usar un servidor local:
-
-- VS Code: extensión **Live Server**, clic derecho en `index.html` → *Open with Live Server*.
-- O en terminal: `python -m http.server 8000` dentro de `landing/` y abrir http://localhost:8000.
-
-## Pendientes
-
-- Cuando la app web esté desplegada, poner su URL en `APP_URL` dentro de `js/config.js`. Mientras tanto, los botones de login y registro llevan a la sección de planes.
-- Los enlaces legales del footer (términos, privacidad, tratamiento de datos) apuntan a `#`.
-- Los beneficios de cada plan son una propuesta; ajustarlos cuando se definan los límites reales.
-
-## Publicar en GitHub Pages
-
-1. Subir el contenido de `landing/` (sin `referencias/`) a la raíz del repositorio de la landing.
-2. En el repositorio: *Settings → Pages → Deploy from a branch → main / (root)*.
-3. La página queda en `https://<organizacion>.github.io/<repositorio>/`.
