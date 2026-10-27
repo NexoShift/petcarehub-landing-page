@@ -1,0 +1,46 @@
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.benefit {
+  padding: var(--space-5);
+}
+
+.benefit__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.benefit__head .icon-badge {
+  margin: 0;
+}
+
+.benefit__head p {
+  font-size: var(--fs-small);
+}
+
+.benefit--vet {
+  border-top: 4px solid var(--color-primary);
+}
+
+.benefit--owner {
+  border-top: 4px solid var(--color-accent);
+}
+
+.benefit .check-list li {
+  font-size: var(--fs-body);
+}
+
+@media (max-width: 860px) {
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit {
+    padding: var(--space-4);
+  }
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">PetCare Hub | Historia clínica veterinaria centrada en tu mascota</title>
+  <meta name="description" data-i18n-attr="content:meta.description" content="PetCare Hub centraliza la historia clínica de perros y gatos entre clínicas, con asistencia de Computer Vision y LLM para veterinarios y explicaciones claras para dueños.">
+  <meta name="keywords" content="historia clínica veterinaria, veterinaria, mascotas, perros, gatos, inteligencia artificial, computer vision, PetCare Hub">
+  <meta name="author" content="NexoShift">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#032B59">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PetCare Hub">
+  <meta property="og:description" content="Historia clínica veterinaria centrada en tu mascota, con asistencia de IA.">
+  <meta property="og:image" content="assets/img/brand/logo-petcarehub.png">
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/isotipo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand" data-i18n-attr="aria-label:a11y.home" aria-label="PetCare Hub, ir al inicio">
+        <img src="assets/img/brand/isotipo.svg" alt="" width="36" height="36">
+        <span>PetCare<span class="brand__hub">Hub</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#inicio" data-i18n="nav.home">Inicio</a></li>
+          <li><a class="nav__link" href="#como-funciona" data-i18n="nav.how">Cómo funciona</a></li>
+          <li><a class="nav__link" href="#funciones" data-i18n="nav.ai">Funciones</a></li>
+          <li><a class="nav__link" href="#beneficios" data-i18n="nav.benefits">Beneficios</a></li>
+          <li><a class="nav__link" href="#planes" data-i18n="nav.plans">Planes</a></li>
+          <li><a class="nav__link" href="#equipo" data-i18n="nav.team">Equipo</a></li>
+          <li><a class="nav__link" href="#preguntas" data-i18n="nav.faq">Preguntas</a></li>
+          <li class="nav__mobile-only"><a class="btn btn--primary btn--block" href="#" data-app-link="login" data-i18n="nav.login">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang-switch" role="group" data-i18n-attr="aria-label:a11y.lang" aria-label="Idioma">
+          <button class="lang-switch__btn" type="button" data-lang="es" aria-pressed="true">ES</button>
+          <button class="lang-switch__btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn--primary btn--sm header__login" href="#" data-app-link="login" data-i18n="nav.login">Iniciar sesión</a>
+        <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" data-i18n-attr="aria-label:a11y.menu" aria-label="Abrir menú">
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <span class="eyebrow" data-i18n="hero.eyebrow">Historia clínica veterinaria inteligente</span>
+          <h1 class="hero__title" data-i18n-html="hero.title">La salud de tu mascota, <span>protegida e inmutable</span></h1>
+          <p class="hero__lead" data-i18n="hero.lead">PetCare Hub une en un solo historial las consultas, exámenes, tratamientos y recetas de tu mascota, sin importar en qué clínica la atiendan. Con IA que apoya al veterinario y explica todo en palabras simples.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#" data-app-link="register-owner" data-i18n="hero.ctaOwner">Soy dueño de mascota</a>
+            <a class="btn btn--outline" href="#" data-app-link="register-vet" data-i18n="hero.ctaVet">Soy veterinario</a>
+          </div>
+
+          <ul class="hero__facts">
+            <li class="hero__fact"><strong data-i18n="hero.fact1Value">1</strong><span data-i18n="hero.fact1Label">historial por mascota, entre clínicas</span></li>
+            <li class="hero__fact"><strong data-i18n="hero.fact2Value">2</strong><span data-i18n="hero.fact2Label">asistentes de IA: visión y lenguaje</span></li>
+            <li class="hero__fact"><strong data-i18n="hero.fact3Value">Web + App</strong><span data-i18n="hero.fact3Label">para veterinarios y dueños</span></li>
+          </ul>
+        </div>
+
+        <div class="app-preview reveal" aria-hidden="true">
+          <div class="app-card">
+            <div class="app-card__bar"><i></i><i></i><i></i></div>
+
+            <div class="patient">
+              <div class="patient__avatar">
+                <svg viewBox="0 0 24 24" fill="currentColor"><ellipse cx="6" cy="9" rx="2" ry="2.6"/><ellipse cx="10" cy="5.5" rx="2" ry="2.7"/><ellipse cx="14" cy="5.5" rx="2" ry="2.7"/><ellipse cx="18" cy="9" rx="2" ry="2.6"/><path d="M12 11c-3.6 0-6.5 3.8-6.5 6.6 0 2 1.6 3.2 3.4 3.2 1.4 0 2-.6 3.1-.6s1.7.6 3.1.6c1.8 0 3.4-1.2 3.4-3.2 0-2.8-2.9-6.6-6.5-6.6Z"/></svg>
+              </div>
+              <div>
+                <div class="patient__name">Max</div>
+                <div class="patient__meta" data-i18n="preview.breed">Golden Retriever · Macho</div>
+              </div>
+            </div>
+
+            <div class="patient__stats">
+              <div class="patient__stat"><strong data-i18n="preview.ageValue">3 años</strong><span data-i18n="preview.age">Edad</span></div>
+              <div class="patient__stat"><strong>28.5 kg</strong><span data-i18n="preview.weight">Peso</span></div>
+              <div class="patient__stat"><strong data-i18n="preview.vaccinesValue">Al día</strong><span data-i18n="preview.vaccines">Vacunas</span></div>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline__title" data-i18n="preview.history">Historial clínico</div>
+              <div class="timeline__item">
+                <span class="timeline__dot"></span>
+                <div><strong data-i18n="preview.item1">Consulta dermatológica</strong><span data-i18n="preview.item1Meta">Dra. Rojas · Clínica San Borja · 12 oct</span></div>
+                <span class="chip chip--ok" data-i18n="preview.item1Chip">Atendido</span>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__dot timeline__dot--warn"></span>
+                <div><strong data-i18n="preview.item2">Hemograma completo</strong><span data-i18n="preview.item2Meta">Laboratorio · 14 oct</span></div>
+                <span class="chip chip--pending" data-i18n="preview.item2Chip">Pendiente</span>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__dot timeline__dot--navy"></span>
+                <div><strong data-i18n="preview.item3">Tratamiento: antihistamínico</strong><span data-i18n="preview.item3Meta">Receta digital · 7 días</span></div>
+                <span class="chip chip--info" data-i18n="preview.item3Chip">En curso</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3.5"/></svg>
+            <div><strong data-i18n="preview.floatTitle">Análisis visual listo</strong><span data-i18n="preview.floatText">Resultado orientativo para revisión del veterinario</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CÓMO FUNCIONA ===================== -->
+    <section class="section section--soft" id="como-funciona">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="how.eyebrow">Cómo funciona</span>
+          <h2 data-i18n="how.title">Un historial que acompaña a tu mascota</h2>
+          <p data-i18n="how.lead">La información clínica ya no se queda en una sola clínica ni en papeles que se pierden.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="card">
+              <span class="step__number">1</span>
+              <h3 data-i18n="how.step1Title">Registra a tu mascota</h3>
+              <p data-i18n="how.step1Text">Crea su perfil con especie, raza, edad y peso. Puedes administrar varias mascotas desde una sola cuenta.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="card">
+              <span class="step__number">2</span>
+              <h3 data-i18n="how.step2Title">El veterinario registra la atención</h3>
+              <p data-i18n="how.step2Text">Anamnesis, diagnóstico, exámenes, tratamientos y recetas quedan registrados con el profesional responsable.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="card">
+              <span class="step__number">3</span>
+              <h3 data-i18n="how.step3Title">Consulta todo cuando lo necesites</h3>
+              <p data-i18n="how.step3Text">El historial longitudinal está disponible en la web y en la app, y lo compartes con la clínica que tú autorices.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== FUNCIONES IA ===================== -->
+    <section class="section section--dark ai" id="funciones">
+      <div class="container ai__grid">
+        <div class="reveal">
+          <span class="eyebrow" data-i18n="ai.eyebrow">Tecnologías emergentes</span>
+          <h2 data-i18n="ai.title">Asistencia Clínica LLM y Computer Vision</h2>
+          <p class="ai__lead" data-i18n="ai.lead">Herramientas de inteligencia artificial que agilizan la consulta, sin reemplazar el criterio del médico veterinario.</p>
+
+          <ul class="ai__features">
+            <li class="ai__feature">
+              <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3.5"/></svg></span>
+              <div><h3 data-i18n="ai.f1Title">Análisis visual de lesiones</h3><p data-i18n="ai.f1Text">Computer Vision detecta y señala zonas de interés en imágenes dérmicas y oculares como apoyo al examen clínico.</p></div>
+            </li>
+            <li class="ai__feature">
+              <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
+              <div><h3 data-i18n="ai.f2Title">Borradores clínicos con LLM</h3><p data-i18n="ai.f2Text">Genera un borrador SOAP a partir de la consulta actual y los antecedentes que el veterinario elige.</p></div>
+            </li>
+            <li class="ai__feature">
+              <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg></span>
+              <div><h3 data-i18n="ai.f3Title">Explicaciones para dueños</h3><p data-i18n="ai.f3Text">Traduce diagnósticos y tratamientos a un lenguaje sencillo para que entiendas cada indicación.</p></div>
+            </li>
+          </ul>
+
+          <p class="ai__note">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0BC3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span data-i18n="ai.note">La IA no diagnostica: el veterinario siempre valida, edita o descarta cada sugerencia.</span>
+          </p>
+        </div>
+
+        <div class="ai__demo reveal" aria-hidden="true">
+          <div class="demo-card">
+            <div class="demo-card__head">
+              <span data-i18n="ai.scanTitle">Scanner óptico multimodal</span>
+              <span><i class="live-dot"></i><span data-i18n="ai.scanLive">Analizando</span></span>
+            </div>
+            <div class="scan">
+              <span class="scan__lesion" style="top:38%;left:24%;width:70px;height:56px"></span>
+              <span class="scan__lesion" style="top:62%;left:64%;width:38px;height:32px"></span>
+              <span class="scan__box" style="top:33%;left:20%;width:92px;height:78px"><span class="scan__label" data-i18n="ai.scanBox1">Zona de interés</span></span>
+              <span class="scan__box scan__box--alt" style="top:57%;left:61%;width:56px;height:50px"><span class="scan__label" data-i18n="ai.scanBox2">Revisar</span></span>
+            </div>
+            <div class="demo-card__foot">
+              <span data-i18n="ai.scanFoot1">Imagen dérmica · Max</span>
+              <span data-i18n="ai.scanFoot2">Orientativo</span>
+            </div>
+          </div>
+
+          <div class="demo-card">
+            <div class="demo-card__head">
+              <span><span class="chat__avatar">AI</span><span data-i18n="ai.chatTitle">Dr. PetCare AI</span></span>
+              <i class="live-dot"></i>
+            </div>
+            <div class="chat">
+              <p class="chat__msg chat__msg--vet" data-i18n="ai.chatVet">Resume la consulta de hoy para la historia clínica.</p>
+              <p class="chat__msg chat__msg--ai" data-i18n-html="ai.chatAi"><b>Borrador SOAP:</b> eritema y prurito en zona abdominal desde hace 5 días. Se sugiere descartar dermatitis alérgica y considerar hemograma. <b>Pendiente de validación.</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BENEFICIOS ===================== -->
+    <section class="section" id="beneficios">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="benefits.eyebrow">Beneficios</span>
+          <h2 data-i18n="benefits.title">Pensado para quienes cuidan su salud</h2>
+          <p data-i18n="benefits.lead">Una misma plataforma con una experiencia adaptada a cada usuario.</p>
+        </header>
+
+        <div class="benefits">
+          <article class="card benefit benefit--vet reveal">
+            <div class="benefit__head">
+              <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a6 6 0 0 0 12 0V3"/><path d="M12 15v2a4 4 0 0 0 8 0v-2"/><circle cx="20" cy="13" r="2"/></svg></span>
+              <div><h3 data-i18n="benefits.vetTitle">Para veterinarios y clínicas</h3><p data-i18n="benefits.vetSub">Menos tiempo buscando, más tiempo atendiendo</p></div>
+            </div>
+            <ul class="check-list">
+              <li data-i18n="benefits.vet1">Antecedentes completos del paciente, aunque haya sido atendido en otra clínica</li>
+              <li data-i18n="benefits.vet2">Seguimiento de exámenes por estado: solicitado, pendiente o con resultado</li>
+              <li data-i18n="benefits.vet3">Recetas y tratamientos digitales con trazabilidad del profesional</li>
+              <li data-i18n="benefits.vet4">Apoyo de IA para documentar más rápido cada consulta</li>
+            </ul>
+          </article>
+
+          <article class="card benefit benefit--owner reveal">
+            <div class="benefit__head">
+              <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></span>
+              <div><h3 data-i18n="benefits.ownerTitle">Para dueños de mascotas</h3><p data-i18n="benefits.ownerSub">Toda su salud, en tu bolsillo</p></div>
+            </div>
+            <ul class="check-list">
+              <li data-i18n="benefits.owner1">Nunca más pierdas una receta o un resultado de laboratorio</li>
+              <li data-i18n="benefits.owner2">Historial de todas tus mascotas en un solo lugar</li>
+              <li data-i18n="benefits.owner3">Explicaciones claras, sin términos técnicos difíciles</li>
+              <li data-i18n="benefits.owner4">Tú decides qué clínica puede ver la información</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PLANES ===================== -->
+    <section class="section section--soft" id="planes">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="plans.eyebrow">Planes</span>
+          <h2 data-i18n="plans.title">Planes adaptados a cada necesidad</h2>
+          <p data-i18n="plans.lead">Elige el plan según tu perfil. Puedes cambiarlo o cancelarlo cuando quieras.</p>
+        </header>
+
+        <div class="pricing">
+          <article class="card plan reveal">
+            <h3 class="plan__name" data-i18n="plans.ownerName">Dueño</h3>
+            <p class="plan__for" data-i18n="plans.ownerFor">Para familias con mascotas</p>
+            <p class="plan__price"><span class="plan__amount">$9</span><span class="plan__period" data-i18n="plans.perMonth">USD / mes</span></p>
+            <ul class="check-list">
+              <li data-i18n="plans.owner1">Hasta 3 mascotas</li>
+              <li data-i18n="plans.owner2">Historial clínico completo</li>
+              <li data-i18n="plans.owner3">Recetas y tratamientos digitales</li>
+              <li data-i18n="plans.owner4">Explicaciones con IA en lenguaje sencillo</li>
+              <li data-i18n="plans.owner5">Análisis visual orientativo</li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="#" data-app-link="plan-owner" data-i18n="plans.choose">Elegir plan</a>
+          </article>
+
+          <article class="card plan plan--featured reveal">
+            <span class="plan__badge" data-i18n="plans.badge">Recomendado</span>
+            <h3 class="plan__name" data-i18n="plans.proName">Profesional</h3>
+            <p class="plan__for" data-i18n="plans.proFor">Para veterinarios independientes</p>
+            <p class="plan__price"><span class="plan__amount">$29</span><span class="plan__period" data-i18n="plans.perMonth">USD / mes</span></p>
+            <ul class="check-list">
+              <li data-i18n="plans.pro1">1 médico veterinario</li>
+              <li data-i18n="plans.pro2">Pacientes ilimitados</li>
+              <li data-i18n="plans.pro3">Consultas, exámenes y recetas</li>
+              <li data-i18n="plans.pro4">Consultas asistidas por IA (CV + LLM)</li>
+              <li data-i18n="plans.pro5">Acceso al historial compartido por el dueño</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="#" data-app-link="plan-pro" data-i18n="plans.choose">Elegir plan</a>
+          </article>
+
+          <article class="card plan reveal">
+            <h3 class="plan__name" data-i18n="plans.clinicName">Clínica</h3>
+            <p class="plan__for" data-i18n="plans.clinicFor">Para clínicas con varios profesionales</p>
+            <p class="plan__price"><span class="plan__amount">$79</span><span class="plan__period" data-i18n="plans.perMonth">USD / mes</span></p>
+            <ul class="check-list">
+              <li data-i18n="plans.clinic1">Varios veterinarios y consultorios</li>
+              <li data-i18n="plans.clinic2">Todo lo del plan Profesional</li>
+              <li data-i18n="plans.clinic3">Mayor cupo de consultas asistidas por IA</li>
+              <li data-i18n="plans.clinic4">Gestión del equipo de la clínica</li>
+              <li data-i18n="plans.clinic5">Soporte prioritario</li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="#" data-app-link="plan-clinic" data-i18n="plans.choose">Elegir plan</a>
+          </article>
+        </div>
+
+        <div class="pricing__notes reveal">
+          <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span data-i18n="plans.note1">Usar Computer Vision, LLM o ambos en una misma consulta cuenta como una sola consulta asistida.</span></p>
+          <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span data-i18n="plans.note2">Suscripción directa, sin emisión de comprobantes SUNAT.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EQUIPO ===================== -->
+    <section class="section" id="equipo">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="team.eyebrow">Nosotros</span>
+          <h2 data-i18n="team.title">El equipo detrás de PetCare Hub</h2>
+          <p data-i18n="team.lead">Somos NexoShift, estudiantes de Ingeniería de Software de la UPC que unimos tecnología y bienestar animal.</p>
+        </header>
+
+        <div class="team">
+          <article class="card member reveal">
+            <img class="member__photo" src="assets/img/team/fabrizio-cutiri.png" alt="Fabrizio Cutiri" width="112" height="112" loading="lazy">
+            <h3 class="member__name">Fabrizio Cutiri</h3>
+            <span class="member__role" data-i18n="team.career">Ingeniería de Software</span>
+            <p class="member__bio" data-i18n="team.fabrizioBio">Interesado en arquitectura de software, monolitos y microservicios, y Domain-Driven Design.</p>
+            
+          </article>
+
+          <article class="card member reveal">
+            <img class="member__photo" src="assets/img/team/giovany-torres.png" alt="Giovany Torres" width="112" height="112" loading="lazy">
+            <h3 class="member__name">Giovany Torres</h3>
+            <span class="member__role" data-i18n="team.career">Ingeniería de Software</span>
+            <p class="member__bio" data-i18n="team.giovanyBio">Organizado y comprometido. Programa con Java y Spring Boot y trabaja con bases de datos y Git.</p>
+            
+          </article>
+
+          <article class="card member reveal">
+            <img class="member__photo" src="assets/img/team/franco-lopez.png" alt="Franco López" width="112" height="112" loading="lazy">
+            <h3 class="member__name">Franco López</h3>
+            <span class="member__role" data-i18n="team.career">Ingeniería de Software</span>
+            <p class="member__bio" data-i18n="team.francoBio">Experiencia en C++, Python, HTML, CSS y MongoDB. Responsable y orientado al trabajo en equipo.</p>
+            
+          </article>
+
+          <article class="card member reveal">
+            <img class="member__photo" src="assets/img/team/yair-aru.png" alt="Yair Aru" width="112" height="112" loading="lazy">
+            <h3 class="member__name">Yair Aru</h3>
+            <span class="member__role" data-i18n="team.career">Ingeniería de Software</span>
+            <p class="member__bio" data-i18n="team.yairBio">Desarrolla aplicaciones web y móviles con C#, JavaScript y TypeScript. Maneja SQL Server.</p>
+           
+          </article>
+
+          <article class="card member reveal">
+            <img class="member__photo" src="assets/img/team/joaquin-carranza.png" alt="Joaquín Carranza" width="112" height="112" loading="lazy">
+            <h3 class="member__name">Joaquín Carranza</h3>
+            <span class="member__role" data-i18n="team.career">Ingeniería de Software</span>
+            <p class="member__bio" data-i18n="team.joaquinBio">Le interesan el manejo de datos y la ciberseguridad. Siempre busca cómo mejorar el producto.</p>
+            
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PREGUNTAS FRECUENTES ===================== -->
+    <section class="section section--soft" id="preguntas">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="faq.eyebrow">Preguntas frecuentes</span>
+          <h2 data-i18n="faq.title">Resolvemos tus dudas</h2>
+        </header>
+
+        <div class="faq reveal">
+          <details class="faq__item" open>
+            <summary class="faq__question" data-i18n="faq.q1">¿La inteligencia artificial diagnostica a mi mascota?</summary>
+            <p class="faq__answer" data-i18n="faq.a1">No. La IA es una herramienta de apoyo. Computer Vision ofrece un análisis visual orientativo y el asistente LLM prepara borradores, pero el médico veterinario siempre valida, edita o descarta cada sugerencia.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question" data-i18n="faq.q2">¿Mis datos y los de mi mascota están seguros?</summary>
+            <p class="faq__answer" data-i18n="faq.a2">Sí. El acceso está protegido por usuario y rol, y cada registro guarda qué profesional lo creó. Solo las clínicas que tú autorices pueden ver el historial de tu mascota.</p>
+          </details>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta__box reveal">
+          <div>
+            <h2 data-i18n="cta.title">Empieza hoy a centralizar la historia clínica</h2>
+            <p data-i18n="cta.text">Crea tu cuenta y lleva la salud de tus pacientes o de tu mascota a un solo lugar.</p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary" href="#" data-app-link="register-owner" data-i18n="cta.owner">Crear cuenta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#inicio" class="brand">
+            <img src="assets/img/brand/isotipo.svg" alt="" width="36" height="36">
+            <span>PetCare<span class="brand__hub">Hub</span></span>
+          </a>
+          <p class="footer__about" data-i18n="footer.about">Plataforma colaborativa de historiales clínicos veterinarios con asistencia de inteligencia artificial.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__title" data-i18n="footer.platform">Plataforma</h4>
+          <ul class="footer__links">
+            <li><a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a></li>
+            <li><a href="#funciones" data-i18n="nav.ai">Funciones</a></li>
+            <li><a href="#beneficios" data-i18n="nav.benefits">Beneficios</a></li>
+            <li><a href="#planes" data-i18n="nav.plans">Planes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title" data-i18n="footer.institutional">Institucional</h4>
+          <ul class="footer__links">
+            <li><a href="#equipo" data-i18n="nav.team">Equipo</a></li>
+            <li><a href="#preguntas" data-i18n="nav.faq">Preguntas</a></li>
+            <li><a href="#" data-app-link="login" data-i18n="nav.login">Iniciar sesión</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title" data-i18n="footer.legal">Seguridad y legal</h4>
+          <ul class="footer__links">
+            <li><a href="#" data-i18n="footer.terms">Términos y condiciones</a></li>
+            <li><a href="#" data-i18n="footer.privacy">Política de privacidad</a></li>
+            <li><a href="#" data-i18n="footer.data">Tratamiento de datos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> PetCare Hub · NexoShift. <span data-i18n="footer.rights">Todos los derechos reservados.</span></span>
+        <span data-i18n="footer.made">Hecho por NexoShift · UPC</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

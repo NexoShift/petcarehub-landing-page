@@ -1,0 +1,60 @@
+/* Tokens de diseño tomados de 6.1 Style Guidelines (TP1) */
+:root {
+  /* Paleta de marca */
+  --color-primary: #032B59;        /* Azul marino */
+  --color-secondary: #023A65;      /* Azul profundo */
+  --color-accent: #0BC3BD;         /* Turquesa */
+  --color-accent-hover: #09A8A3;
+  --color-accent-soft: #E6F9F8;
+  --color-bg: #FFFFFF;
+  --color-bg-soft: #F5F8FB;
+  --color-text: #1C2430;
+  --color-text-muted: #667085;
+  --color-border: #E4E9F0;
+  --color-on-dark: #FFFFFF;
+  --color-on-dark-muted: #B9C7D8;
+
+  /* Colores funcionales */
+  --color-success: #1DC75F;
+  --color-warning: #E8C35E;
+  --color-error: #FF2626;
+  --color-info: #2BA8E8;
+
+  /* Tipografía: Inter (Regular, Medium, SemiBold, Bold) */
+  --font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --fs-display: clamp(2rem, 1.4rem + 2.6vw, 3rem);     /* 32-36 móvil / 40-48 web */
+  --fs-section: clamp(1.75rem, 1.5rem + 1vw, 2rem);    /* 28-32 */
+  --fs-component: clamp(1.25rem, 1.15rem + .4vw, 1.5rem); /* 20-24 */
+  --fs-body: 1rem;        /* 16 */
+  --fs-small: .875rem;    /* 14 */
+  --fs-label: .8125rem;   /* 13 */
+
+  /* Espaciado base 8px */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 40px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(3, 43, 89, .06), 0 1px 3px rgba(3, 43, 89, .08);
+  --shadow-md: 0 8px 24px rgba(3, 43, 89, .08);
+  --shadow-lg: 0 20px 48px rgba(3, 43, 89, .14);
+
+  --container: 1180px;
+  --header-height: 72px;
+  --transition: .2s ease;
+}
