@@ -1,0 +1,40 @@
+body {
+  font-family: var(--font-family);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-primary);
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+
+h1 {
+  font-size: var(--fs-display);
+  font-weight: var(--fw-bold);
+}
+
+h2 {
+  font-size: var(--fs-section);
+  font-weight: var(--fw-bold);
+}
+
+h3 {
+  font-size: var(--fs-component);
+  font-weight: var(--fw-semibold);
+}
+
+p {
+  color: var(--color-text-muted);
+}
+
+strong {
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+}
