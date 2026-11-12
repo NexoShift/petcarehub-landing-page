@@ -1,0 +1,230 @@
+.ai {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(11, 195, 189, .18), transparent 40%),
+    linear-gradient(160deg, var(--color-secondary), var(--color-primary));
+}
+
+.ai__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.ai__lead {
+  margin-block: var(--space-3) var(--space-5);
+  font-size: 1.0625rem;
+}
+
+.ai__features {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.ai__feature {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: var(--space-3);
+}
+
+.ai__feature .icon-badge {
+  margin: 0;
+  background: rgba(11, 195, 189, .15);
+  color: var(--color-accent);
+}
+
+.ai__feature h3 {
+  font-size: 1.0625rem;
+  margin-bottom: 4px;
+}
+
+.ai__feature p {
+  font-size: var(--fs-small);
+}
+
+.ai__note {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+  padding: 12px 16px;
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: rgba(255, 255, 255, .06);
+  font-size: var(--fs-small);
+  color: var(--color-on-dark);
+}
+
+.ai__demo {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.demo-card {
+  padding: var(--space-3);
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, .06);
+  backdrop-filter: blur(6px);
+}
+
+.demo-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+  color: var(--color-on-dark);
+}
+
+.demo-card__head span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 0 rgba(11, 195, 189, .6);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  70% {
+    box-shadow: 0 0 0 10px rgba(11, 195, 189, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(11, 195, 189, 0);
+  }
+}
+
+/* "Foto clínica" ilustrada con recuadros de Computer Vision */
+.scan {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background:
+    radial-gradient(ellipse at 30% 40%, #E9C9A3 0 18%, transparent 19%),
+    radial-gradient(ellipse at 62% 58%, #D9A979 0 14%, transparent 15%),
+    repeating-linear-gradient(115deg, #C99467 0 3px, #B98457 3px 6px, #D3A174 6px 9px);
+}
+
+.scan::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, rgba(11, 195, 189, .25) 50%, transparent);
+  height: 30%;
+  animation: scan 3.5s linear infinite;
+}
+
+@keyframes scan {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(350%);
+  }
+}
+
+.scan__lesion {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #A3423A 0 35%, #C2655A 60%, transparent 72%);
+}
+
+.scan__box {
+  position: absolute;
+  border: 2px solid var(--color-accent);
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px rgba(3, 43, 89, .4);
+}
+
+.scan__label {
+  position: absolute;
+  top: -24px;
+  left: -2px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  font-size: 11px;
+  font-weight: var(--fw-bold);
+  white-space: nowrap;
+}
+
+.scan__box--alt {
+  border-color: var(--color-warning);
+}
+
+.scan__box--alt .scan__label {
+  background: var(--color-warning);
+}
+
+.demo-card__foot {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+  font-size: var(--fs-label);
+  color: var(--color-on-dark-muted);
+}
+
+/* Chat del asistente LLM */
+.chat {
+  display: grid;
+  gap: 10px;
+}
+
+.chat__msg {
+  max-width: 92%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+
+.ai .chat__msg--vet {
+  justify-self: end;
+  border-bottom-right-radius: 4px;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  font-weight: var(--fw-medium);
+}
+
+.ai .chat__msg--ai {
+  border-bottom-left-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.chat__msg--ai b {
+  color: var(--color-primary);
+}
+
+.demo-card__head .chat__avatar {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  font-size: 11px;
+  font-weight: var(--fw-bold);
+}
+
+@media (max-width: 960px) {
+  .ai__grid {
+    grid-template-columns: 1fr;
+  }
+}
