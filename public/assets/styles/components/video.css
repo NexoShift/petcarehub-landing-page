@@ -1,0 +1,76 @@
+/* Videos "Sobre el producto" y "Sobre el equipo" */
+.video {
+  max-width: 880px;
+  margin: 0 auto var(--space-7);
+}
+
+.video__frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 80% 10%, rgba(11, 195, 189, .35), transparent 45%),
+    linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+  box-shadow: var(--shadow-lg);
+}
+
+.video__frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video__placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  text-align: center;
+  color: var(--color-on-dark);
+}
+
+.video__placeholder strong {
+  color: var(--color-on-dark);
+  font-size: var(--fs-component);
+  font-weight: var(--fw-semibold);
+}
+
+.video__placeholder span:last-child {
+  font-size: var(--fs-small);
+  color: var(--color-on-dark-muted);
+}
+
+.video__play {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  margin-bottom: var(--space-2);
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  box-shadow: 0 0 0 10px rgba(11, 195, 189, .2);
+}
+
+.video__play svg {
+  width: 30px;
+  height: 30px;
+  margin-left: 4px;
+}
+
+@media (max-width: 480px) {
+  .video__play {
+    width: 56px;
+    height: 56px;
+  }
+
+  .video__placeholder strong {
+    font-size: 1.0625rem;
+  }
+}
