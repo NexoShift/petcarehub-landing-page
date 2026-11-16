@@ -164,8 +164,9 @@ const En = {
   "cta": {
     "title": "Start centralizing medical records today",
     "text": "Create your account and bring your patients' or your pet's health into one place.",
-    "owner": "Sign up as an owner",
+    "owner": "Sign up",
     "vet": "Sign up as a vet"
+    
   },
   "footer": {
     "about": "Collaborative veterinary medical records platform with artificial intelligence assistance.",
