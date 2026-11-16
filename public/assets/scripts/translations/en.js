@@ -1,4 +1,5 @@
-{
+// English translations (En)
+const En = {
   "meta": {
     "title": "PetCare Hub | Veterinary medical records centered on your pet",
     "description": "PetCare Hub brings together the medical history of dogs and cats across clinics, with Computer Vision and LLM assistance for vets and clear explanations for pet owners."
@@ -11,13 +12,13 @@
   },
   "nav": {
     "home": "Home",
-    "how": "How it works",
     "ai": "Features",
     "benefits": "Benefits",
     "plans": "Plans",
     "team": "Team",
     "faq": "FAQ",
-    "login": "Log in"
+    "login": "Log in",
+    "product": "Product"
   },
   "hero": {
     "eyebrow": "Smart veterinary medical records",
@@ -53,7 +54,7 @@
     "floatText": "Guidance result for the vet to review"
   },
   "how": {
-    "eyebrow": "How it works",
+    "eyebrow": "About the product",
     "title": "A medical history that goes with your pet",
     "lead": "Clinical information no longer stays locked in one clinic or on paper that gets lost.",
     "step1Title": "Register your pet",
@@ -133,7 +134,7 @@
     "note2": "Direct subscription, no SUNAT receipts are issued."
   },
   "team": {
-    "eyebrow": "About us",
+    "eyebrow": "About the team",
     "title": "The team behind PetCare Hub",
     "lead": "We are NexoShift, Software Engineering students at UPC bringing together technology and animal welfare.",
     "tagSecurity": "Cybersecurity",
@@ -163,8 +164,9 @@
   "cta": {
     "title": "Start centralizing medical records today",
     "text": "Create your account and bring your patients' or your pet's health into one place.",
-    "owner": "Sign up as an owner",
+    "owner": "Sign up",
     "vet": "Sign up as a vet"
+    
   },
   "footer": {
     "about": "Collaborative veterinary medical records platform with artificial intelligence assistance.",
@@ -173,8 +175,54 @@
     "legal": "Security & legal",
     "terms": "Terms and conditions",
     "privacy": "Privacy policy",
-    "data": "Data processing",
     "rights": "All rights reserved.",
     "made": "Made by NexoShift · UPC"
+  },
+  "video": {
+    "productTitle": "See PetCare Hub in action",
+    "teamTitle": "Meet the NexoShift team",
+    "soon": "The video will be available very soon"
+  },
+  "legal": {
+    "back": "Back to home",
+    "updated": "Last updated: November 12, 2026"
+  },
+  "tos": {
+    "metaTitle": "Terms of Service | PetCare Hub",
+    "title": "Terms of Service",
+    "intro": "These terms govern the use of PetCare Hub, the NexoShift web and mobile platform for managing the medical history of dogs and cats. By creating an account, you accept these terms.",
+    "s1Title": "1. Service description",
+    "s1Text": "PetCare Hub lets you record pets, visits, lab tests, treatments and prescriptions in a pet-centered history, and offers Computer Vision and LLM tools to support veterinarians.",
+    "s2Title": "2. Accounts and roles",
+    "s2Text": "There are pet owner accounts and veterinarian or clinic accounts. Each user is responsible for the accuracy of their data and for keeping their password private.",
+    "s3Title": "3. Use of artificial intelligence",
+    "s3Text": "AI visual analyses and clinical drafts are for guidance only. They are not a diagnosis: the veterinarian always validates, edits or discards each suggestion and is responsible for clinical decisions.",
+    "s4Title": "4. Plans and payments",
+    "s4Text": "The Owner, Professional and Clinic plans are billed monthly in US dollars. It is a direct subscription and no SUNAT receipts are issued. You can upgrade by paying the difference or cancel anytime.",
+    "s5Title": "5. Clinical information",
+    "s5Text": "Each pet's history belongs to its owner, who decides which clinics can access it. Every record stores the professional who created it to keep it traceable.",
+    "s6Title": "6. Acceptable use",
+    "s6Text": "You may not use the platform to record false information, access other users' data without authorization or disrupt the service.",
+    "s7Title": "7. Changes to these terms",
+    "s7Text": "NexoShift may update these terms. Important changes will be announced in the platform before they take effect."
+  },
+  "policies": {
+    "metaTitle": "Privacy Policy | PetCare Hub",
+    "title": "Privacy Policy",
+    "intro": "At NexoShift we protect the personal data of PetCare Hub users in accordance with Peru's Personal Data Protection Law No. 29733 and its regulations.",
+    "s1Title": "1. Data we collect",
+    "s1Text": "Account data (name, email, phone and role), professional data of the veterinarian or clinic, and pet data: species, breed, age, weight and clinical information.",
+    "s2Title": "2. How we use it",
+    "s2Text": "To provide the service: keep the medical history, enable care across clinics, manage the subscription and offer the AI assistance features.",
+    "s3Title": "3. Who can see the information",
+    "s3Text": "Only the pet owner and the clinics or veterinarians they authorize. We do not sell or share personal data for advertising.",
+    "s4Title": "4. Images and artificial intelligence",
+    "s4Text": "Images and texts sent to the AI features are processed by external Computer Vision and LLM providers only to generate the requested result.",
+    "s5Title": "5. Security",
+    "s5Text": "Access is protected by user, password and role, communication is encrypted and every change to the history is recorded with its author.",
+    "s6Title": "6. Your rights",
+    "s6Text": "You can exercise your rights of access, rectification, cancellation and objection (ARCO) from your account or by writing to the PetCare Hub support team.",
+    "s7Title": "7. Retention",
+    "s7Text": "We keep data while the account is active. If you delete it, we erase or anonymize your personal data, except what the law requires us to keep."
   }
-}
+};

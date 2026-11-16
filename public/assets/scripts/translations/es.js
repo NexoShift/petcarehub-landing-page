@@ -1,4 +1,5 @@
-{
+// Spanish translations (Es)
+const Es = {
   "meta": {
     "title": "PetCare Hub | Historia clínica veterinaria centrada en tu mascota",
     "description": "PetCare Hub centraliza la historia clínica de perros y gatos entre clínicas, con asistencia de Computer Vision y LLM para veterinarios y explicaciones claras para dueños."
@@ -11,13 +12,13 @@
   },
   "nav": {
     "home": "Inicio",
-    "how": "Cómo funciona",
     "ai": "Funciones",
     "benefits": "Beneficios",
     "plans": "Planes",
     "team": "Equipo",
     "faq": "Preguntas",
-    "login": "Iniciar sesión"
+    "login": "Iniciar sesión",
+    "product": "Producto"
   },
   "hero": {
     "eyebrow": "Historia clínica veterinaria inteligente",
@@ -53,7 +54,7 @@
     "floatText": "Resultado orientativo para revisión del veterinario"
   },
   "how": {
-    "eyebrow": "Cómo funciona",
+    "eyebrow": "Sobre el producto",
     "title": "Un historial que acompaña a tu mascota",
     "lead": "La información clínica ya no se queda en una sola clínica ni en papeles que se pierden.",
     "step1Title": "Registra a tu mascota",
@@ -133,7 +134,7 @@
     "note2": "Suscripción directa, sin emisión de comprobantes SUNAT."
   },
   "team": {
-    "eyebrow": "Nosotros",
+    "eyebrow": "Sobre el equipo",
     "title": "El equipo detrás de PetCare Hub",
     "lead": "Somos NexoShift, estudiantes de Ingeniería de Software de la UPC que unimos tecnología y bienestar animal.",
     "tagSecurity": "Ciberseguridad",
@@ -163,7 +164,7 @@
   "cta": {
     "title": "Empieza hoy a centralizar la historia clínica",
     "text": "Crea tu cuenta y lleva la salud de tus pacientes o de tu mascota a un solo lugar.",
-    "owner": "Registrarme como dueño",
+    "owner": "Registrarme",
     "vet": "Registrarme como veterinario"
   },
   "footer": {
@@ -173,8 +174,54 @@
     "legal": "Seguridad y legal",
     "terms": "Términos y condiciones",
     "privacy": "Política de privacidad",
-    "data": "Tratamiento de datos",
     "rights": "Todos los derechos reservados.",
     "made": "Hecho por NexoShift · UPC"
+  },
+  "video": {
+    "productTitle": "Conoce PetCare Hub en acción",
+    "teamTitle": "Conoce al equipo NexoShift",
+    "soon": "El video estará disponible muy pronto"
+  },
+  "legal": {
+    "back": "Volver al inicio",
+    "updated": "Última actualización: 12 de noviembre de 2026"
+  },
+  "tos": {
+    "metaTitle": "Términos y condiciones | PetCare Hub",
+    "title": "Términos y condiciones",
+    "intro": "Estos términos regulan el uso de PetCare Hub, la plataforma web y móvil de NexoShift para gestionar la historia clínica de perros y gatos. Al crear una cuenta, aceptas estas condiciones.",
+    "s1Title": "1. Descripción del servicio",
+    "s1Text": "PetCare Hub permite registrar mascotas, consultas, exámenes, tratamientos y recetas en un historial centrado en la mascota, y ofrece herramientas de Computer Vision y LLM como apoyo al médico veterinario.",
+    "s2Title": "2. Cuentas y roles",
+    "s2Text": "Existen cuentas de dueño de mascota y de médico veterinario o clínica. Cada usuario es responsable de la veracidad de sus datos y de mantener su contraseña en reserva.",
+    "s3Title": "3. Uso de la inteligencia artificial",
+    "s3Text": "Los análisis visuales y los borradores clínicos generados por IA son orientativos. No constituyen un diagnóstico: el médico veterinario siempre valida, edita o descarta cada sugerencia y es el responsable de las decisiones clínicas.",
+    "s4Title": "4. Planes y pagos",
+    "s4Text": "Los planes Dueño, Profesional y Clínica se cobran de forma mensual en dólares estadounidenses. Es una suscripción directa y no se emiten comprobantes SUNAT. Puedes cambiar de plan pagando la diferencia o cancelarlo cuando quieras.",
+    "s5Title": "5. Información clínica",
+    "s5Text": "El historial de cada mascota pertenece a su dueño, quien decide qué clínicas pueden consultarlo. Cada registro guarda el profesional que lo creó para asegurar su trazabilidad.",
+    "s6Title": "6. Uso adecuado",
+    "s6Text": "No está permitido usar la plataforma para registrar información falsa, acceder a datos de otros usuarios sin autorización ni afectar el funcionamiento del servicio.",
+    "s7Title": "7. Cambios en los términos",
+    "s7Text": "NexoShift puede actualizar estos términos. Los cambios importantes se comunicarán dentro de la plataforma antes de que entren en vigencia."
+  },
+  "policies": {
+    "metaTitle": "Política de privacidad | PetCare Hub",
+    "title": "Política de privacidad",
+    "intro": "En NexoShift protegemos los datos personales de los usuarios de PetCare Hub de acuerdo con la Ley N° 29733, Ley de Protección de Datos Personales del Perú, y su reglamento.",
+    "s1Title": "1. Datos que recopilamos",
+    "s1Text": "Datos de la cuenta (nombre, correo, teléfono y rol), datos profesionales del veterinario o la clínica, y datos de las mascotas: especie, raza, edad, peso e información clínica.",
+    "s2Title": "2. Para qué los usamos",
+    "s2Text": "Para brindar el servicio: mantener el historial clínico, permitir la atención entre clínicas, gestionar la suscripción y ofrecer las funciones de asistencia con IA.",
+    "s3Title": "3. Quién puede ver la información",
+    "s3Text": "Solo el dueño de la mascota y las clínicas o veterinarios que él autorice. No vendemos ni compartimos datos personales con fines publicitarios.",
+    "s4Title": "4. Imágenes e inteligencia artificial",
+    "s4Text": "Las imágenes y textos que se envían a las funciones de IA se procesan mediante proveedores externos de Computer Vision y LLM únicamente para generar el resultado solicitado.",
+    "s5Title": "5. Seguridad",
+    "s5Text": "El acceso está protegido por usuario, contraseña y rol, la comunicación viaja cifrada y cada cambio en el historial queda registrado con su autor.",
+    "s6Title": "6. Tus derechos",
+    "s6Text": "Puedes ejercer tus derechos de acceso, rectificación, cancelación y oposición (ARCO) desde tu cuenta o escribiendo al equipo de soporte de PetCare Hub.",
+    "s7Title": "7. Conservación",
+    "s7Text": "Conservamos los datos mientras la cuenta esté activa. Si la eliminas, borramos o anonimizamos tus datos personales, salvo los que la ley obligue a conservar."
   }
-}
+};

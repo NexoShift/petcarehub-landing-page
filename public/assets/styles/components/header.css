@@ -198,3 +198,8 @@
     margin-top: var(--space-2);
   }
 }
+
+/* Reserva el alto del header mientras main.js carga _header.html */
+#header-placeholder {
+  height: var(--header-height);
+}

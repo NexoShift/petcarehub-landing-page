@@ -14,57 +14,25 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="PetCare Hub">
   <meta property="og:description" content="Historia clínica veterinaria centrada en tu mascota, con asistencia de IA.">
-  <meta property="og:image" content="assets/img/brand/logo-petcarehub.png">
+  <meta property="og:image" content="assets/images/brand/logo-petcarehub.png">
 
-  <link rel="icon" type="image/svg+xml" href="assets/img/brand/isotipo.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/isotipo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
   <script>document.documentElement.classList.replace('no-js', 'js');</script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido</a>
 
-  <!-- ===================== HEADER ===================== -->
-  <header class="header" id="header">
-    <div class="container header__inner">
-      <a href="#inicio" class="brand" data-i18n-attr="aria-label:a11y.home" aria-label="PetCare Hub, ir al inicio">
-        <img src="assets/img/brand/isotipo.svg" alt="" width="36" height="36">
-        <span>PetCare<span class="brand__hub">Hub</span></span>
-      </a>
-
-      <nav class="nav" id="nav" aria-label="Principal">
-        <ul class="nav__list">
-          <li><a class="nav__link" href="#inicio" data-i18n="nav.home">Inicio</a></li>
-          <li><a class="nav__link" href="#como-funciona" data-i18n="nav.how">Cómo funciona</a></li>
-          <li><a class="nav__link" href="#funciones" data-i18n="nav.ai">Funciones</a></li>
-          <li><a class="nav__link" href="#beneficios" data-i18n="nav.benefits">Beneficios</a></li>
-          <li><a class="nav__link" href="#planes" data-i18n="nav.plans">Planes</a></li>
-          <li><a class="nav__link" href="#equipo" data-i18n="nav.team">Equipo</a></li>
-          <li><a class="nav__link" href="#preguntas" data-i18n="nav.faq">Preguntas</a></li>
-          <li class="nav__mobile-only"><a class="btn btn--primary btn--block" href="#" data-app-link="login" data-i18n="nav.login">Iniciar sesión</a></li>
-        </ul>
-      </nav>
-
-      <div class="header__actions">
-        <div class="lang-switch" role="group" data-i18n-attr="aria-label:a11y.lang" aria-label="Idioma">
-          <button class="lang-switch__btn" type="button" data-lang="es" aria-pressed="true">ES</button>
-          <button class="lang-switch__btn" type="button" data-lang="en" aria-pressed="false">EN</button>
-        </div>
-        <a class="btn btn--primary btn--sm header__login" href="#" data-app-link="login" data-i18n="nav.login">Iniciar sesión</a>
-        <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" data-i18n-attr="aria-label:a11y.menu" aria-label="Abrir menú">
-          <span class="nav-toggle__bar"></span>
-        </button>
-      </div>
-    </div>
-  </header>
+  <div id="header-placeholder"></div>
 
   <main id="main">
     <!-- ===================== HERO ===================== -->
-    <section class="hero" id="inicio">
+    <section class="hero" id="home-section">
       <div class="container hero__grid">
         <div class="hero__content reveal">
           <span class="eyebrow" data-i18n="hero.eyebrow">Historia clínica veterinaria inteligente</span>
@@ -131,14 +99,25 @@
       </div>
     </section>
 
-    <!-- ===================== CÓMO FUNCIONA ===================== -->
-    <section class="section section--soft" id="como-funciona">
+    <!-- ===================== SOBRE EL PRODUCTO ===================== -->
+    <section class="section section--soft" id="about-product-section">
       <div class="container">
         <header class="section__head reveal">
-          <span class="eyebrow" data-i18n="how.eyebrow">Cómo funciona</span>
+          <span class="eyebrow" data-i18n="how.eyebrow">Sobre el producto</span>
           <h2 data-i18n="how.title">Un historial que acompaña a tu mascota</h2>
           <p data-i18n="how.lead">La información clínica ya no se queda en una sola clínica ni en papeles que se pierden.</p>
         </header>
+
+        <div class="video reveal" data-video="product">
+          <div class="video__frame">
+            <div class="video__placeholder">
+              <span class="video__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span>
+              <strong data-i18n="video.productTitle">Conoce PetCare Hub en acción</strong>
+              <span data-i18n="video.soon">El video estará disponible muy pronto</span>
+            </div>
+          </div>
+        </div>
+
 
         <ol class="steps">
           <li class="step reveal">
@@ -167,7 +146,7 @@
     </section>
 
     <!-- ===================== FUNCIONES IA ===================== -->
-    <section class="section section--dark ai" id="funciones">
+    <section class="section section--dark ai" id="features-section">
       <div class="container ai__grid">
         <div class="reveal">
           <span class="eyebrow" data-i18n="ai.eyebrow">Tecnologías emergentes</span>
@@ -228,7 +207,7 @@
     </section>
 
     <!-- ===================== BENEFICIOS ===================== -->
-    <section class="section" id="beneficios">
+    <section class="section" id="benefits-section">
       <div class="container">
         <header class="section__head reveal">
           <span class="eyebrow" data-i18n="benefits.eyebrow">Beneficios</span>
@@ -267,7 +246,7 @@
     </section>
 
     <!-- ===================== PLANES ===================== -->
-    <section class="section section--soft" id="planes">
+    <section class="section section--soft" id="plans-section">
       <div class="container">
         <header class="section__head reveal">
           <span class="eyebrow" data-i18n="plans.eyebrow">Planes</span>
@@ -327,18 +306,29 @@
       </div>
     </section>
 
-    <!-- ===================== EQUIPO ===================== -->
-    <section class="section" id="equipo">
+    <!-- ===================== SOBRE EL EQUIPO ===================== -->
+    <section class="section" id="about-team-section">
       <div class="container">
         <header class="section__head reveal">
-          <span class="eyebrow" data-i18n="team.eyebrow">Nosotros</span>
+          <span class="eyebrow" data-i18n="team.eyebrow">Sobre el equipo</span>
           <h2 data-i18n="team.title">El equipo detrás de PetCare Hub</h2>
           <p data-i18n="team.lead">Somos NexoShift, estudiantes de Ingeniería de Software de la UPC que unimos tecnología y bienestar animal.</p>
         </header>
 
+        <div class="video reveal" data-video="team">
+          <div class="video__frame">
+            <div class="video__placeholder">
+              <span class="video__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span>
+              <strong data-i18n="video.teamTitle">Conoce al equipo NexoShift</strong>
+              <span data-i18n="video.soon">El video estará disponible muy pronto</span>
+            </div>
+          </div>
+        </div>
+
+
         <div class="team">
           <article class="card member reveal">
-            <img class="member__photo" src="assets/img/team/fabrizio-cutiri.png" alt="Fabrizio Cutiri" width="112" height="112" loading="lazy">
+            <img class="member__photo" src="assets/images/team/fabrizio-cutiri.png" alt="Fabrizio Cutiri" width="112" height="112" loading="lazy">
             <h3 class="member__name">Fabrizio Cutiri</h3>
             <span class="member__role" data-i18n="team.career">Ingeniería de Software</span>
             <p class="member__bio" data-i18n="team.fabrizioBio">Interesado en arquitectura de software, monolitos y microservicios, y Domain-Driven Design.</p>
@@ -346,23 +336,23 @@
           </article>
 
           <article class="card member reveal">
-            <img class="member__photo" src="assets/img/team/giovany-torres.png" alt="Giovany Torres" width="112" height="112" loading="lazy">
+            <img class="member__photo" src="assets/images/team/giovany-torres.png" alt="Giovany Torres" width="112" height="112" loading="lazy">
             <h3 class="member__name">Giovany Torres</h3>
             <span class="member__role" data-i18n="team.career">Ingeniería de Software</span>
             <p class="member__bio" data-i18n="team.giovanyBio">Organizado y comprometido. Programa con Java y Spring Boot y trabaja con bases de datos y Git.</p>
-            
+           
           </article>
 
           <article class="card member reveal">
-            <img class="member__photo" src="assets/img/team/franco-lopez.png" alt="Franco López" width="112" height="112" loading="lazy">
+            <img class="member__photo" src="assets/images/team/franco-lopez.png" alt="Franco López" width="112" height="112" loading="lazy">
             <h3 class="member__name">Franco López</h3>
             <span class="member__role" data-i18n="team.career">Ingeniería de Software</span>
             <p class="member__bio" data-i18n="team.francoBio">Experiencia en C++, Python, HTML, CSS y MongoDB. Responsable y orientado al trabajo en equipo.</p>
-            
+           
           </article>
 
           <article class="card member reveal">
-            <img class="member__photo" src="assets/img/team/yair-aru.png" alt="Yair Aru" width="112" height="112" loading="lazy">
+            <img class="member__photo" src="assets/images/team/yair-aru.png" alt="Yair Aru" width="112" height="112" loading="lazy">
             <h3 class="member__name">Yair Aru</h3>
             <span class="member__role" data-i18n="team.career">Ingeniería de Software</span>
             <p class="member__bio" data-i18n="team.yairBio">Desarrolla aplicaciones web y móviles con C#, JavaScript y TypeScript. Maneja SQL Server.</p>
@@ -370,7 +360,7 @@
           </article>
 
           <article class="card member reveal">
-            <img class="member__photo" src="assets/img/team/joaquin-carranza.png" alt="Joaquín Carranza" width="112" height="112" loading="lazy">
+            <img class="member__photo" src="assets/images/team/joaquin-carranza.png" alt="Joaquín Carranza" width="112" height="112" loading="lazy">
             <h3 class="member__name">Joaquín Carranza</h3>
             <span class="member__role" data-i18n="team.career">Ingeniería de Software</span>
             <p class="member__bio" data-i18n="team.joaquinBio">Le interesan el manejo de datos y la ciberseguridad. Siempre busca cómo mejorar el producto.</p>
@@ -381,7 +371,7 @@
     </section>
 
     <!-- ===================== PREGUNTAS FRECUENTES ===================== -->
-    <section class="section section--soft" id="preguntas">
+    <section class="section section--soft" id="faq-section">
       <div class="container">
         <header class="section__head reveal">
           <span class="eyebrow" data-i18n="faq.eyebrow">Preguntas frecuentes</span>
@@ -397,7 +387,22 @@
             <summary class="faq__question" data-i18n="faq.q2">¿Mis datos y los de mi mascota están seguros?</summary>
             <p class="faq__answer" data-i18n="faq.a2">Sí. El acceso está protegido por usuario y rol, y cada registro guarda qué profesional lo creó. Solo las clínicas que tú autorices pueden ver el historial de tu mascota.</p>
           </details>
-          
+          <details class="faq__item">
+            <summary class="faq__question" data-i18n="faq.q3">¿Puedo usar el historial en diferentes clínicas?</summary>
+            <p class="faq__answer" data-i18n="faq.a3">Sí. El historial es longitudinal y está centrado en la mascota, no en la clínica. Así cualquier veterinario autorizado conoce sus antecedentes.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question" data-i18n="faq.q4">¿Qué mascotas puedo registrar?</summary>
+            <p class="faq__answer" data-i18n="faq.a4">Por ahora PetCare Hub está enfocado en perros y gatos. La identificación se hace con sus datos y rasgos, sin necesidad de microchip.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question" data-i18n="faq.q5">¿Emiten boleta o factura?</summary>
+            <p class="faq__answer" data-i18n="faq.a5">No. Los planes son una suscripción directa y no se emiten comprobantes SUNAT.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question" data-i18n="faq.q6">¿Puedo cambiar o cancelar mi plan?</summary>
+            <p class="faq__answer" data-i18n="faq.a6">Sí. Puedes subir de plan pagando solo la diferencia, o cancelarlo cuando quieras desde tu cuenta.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -411,63 +416,20 @@
             <p data-i18n="cta.text">Crea tu cuenta y lleva la salud de tus pacientes o de tu mascota a un solo lugar.</p>
           </div>
           <div class="cta__actions">
-            <a class="btn btn--primary" href="#" data-app-link="register-owner" data-i18n="cta.owner">Crear cuenta</a>
+            <a class="btn btn--primary" href="#" data-app-link="register" data-i18n="cta.owner">Registrarme</a>
+            
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <a href="#inicio" class="brand">
-            <img src="assets/img/brand/isotipo.svg" alt="" width="36" height="36">
-            <span>PetCare<span class="brand__hub">Hub</span></span>
-          </a>
-          <p class="footer__about" data-i18n="footer.about">Plataforma colaborativa de historiales clínicos veterinarios con asistencia de inteligencia artificial.</p>
-        </div>
+  <div id="footer-placeholder"></div>
 
-        <div>
-          <h4 class="footer__title" data-i18n="footer.platform">Plataforma</h4>
-          <ul class="footer__links">
-            <li><a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a></li>
-            <li><a href="#funciones" data-i18n="nav.ai">Funciones</a></li>
-            <li><a href="#beneficios" data-i18n="nav.benefits">Beneficios</a></li>
-            <li><a href="#planes" data-i18n="nav.plans">Planes</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer__title" data-i18n="footer.institutional">Institucional</h4>
-          <ul class="footer__links">
-            <li><a href="#equipo" data-i18n="nav.team">Equipo</a></li>
-            <li><a href="#preguntas" data-i18n="nav.faq">Preguntas</a></li>
-            <li><a href="#" data-app-link="login" data-i18n="nav.login">Iniciar sesión</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer__title" data-i18n="footer.legal">Seguridad y legal</h4>
-          <ul class="footer__links">
-            <li><a href="#" data-i18n="footer.terms">Términos y condiciones</a></li>
-            <li><a href="#" data-i18n="footer.privacy">Política de privacidad</a></li>
-            <li><a href="#" data-i18n="footer.data">Tratamiento de datos</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer__bottom">
-        <span>© <span id="year">2026</span> PetCare Hub · NexoShift. <span data-i18n="footer.rights">Todos los derechos reservados.</span></span>
-        <span data-i18n="footer.made">Hecho por NexoShift · UPC</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/config.js"></script>
-  <script src="js/i18n.js"></script>
-  <script src="js/main.js"></script>
+  <script src="assets/scripts/config.js"></script>
+  <script src="assets/scripts/translations/es.js"></script>
+  <script src="assets/scripts/translations/en.js"></script>
+  <script src="assets/scripts/i18n.js"></script>
+  <script src="assets/scripts/main.js"></script>
 </body>
 </html>
