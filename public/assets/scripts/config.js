@@ -9,17 +9,16 @@
  * or any embed link. While a link is empty, the section shows a "coming soon" placeholder.
  */
 window.PETCARE_CONFIG = {
-    APP_URL: '',
+    APP_URL: 'https://petcarehub-web-application.pages.dev',
     ROUTES: {
         'login': '/login',
-        'register-owner': '/register?role=owner',
-        'register-vet': '/register?role=vet',
+        'register': '/sign-up',
         'plan-owner': '/register?role=owner&plan=owner',
         'plan-pro': '/register?role=vet&plan=professional',
         'plan-clinic': '/register?role=vet&plan=clinic'
     },
     VIDEOS: {
-        product: '',
+        product: 'https://www.youtube.com/watch?v=RGIPiUQ4nq8',
         team: ''
     },
     DEFAULT_LANG: 'es',

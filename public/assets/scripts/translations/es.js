@@ -164,7 +164,7 @@ const Es = {
   "cta": {
     "title": "Empieza hoy a centralizar la historia clínica",
     "text": "Crea tu cuenta y lleva la salud de tus pacientes o de tu mascota a un solo lugar.",
-    "owner": "Registrarme como dueño",
+    "owner": "Registrarme",
     "vet": "Registrarme como veterinario"
   },
   "footer": {
